@@ -14,6 +14,19 @@ export default function Login(props) {
   );
 }
 
+export default function Login(props) {
+  const handleClick = () => {
+    alert('Hello Alex');
+  };
+
+  return (
+    <View style={styles.login}>
+      <Text>This is the Login Screen</Text>
+      <Button title="Log In" onPress={handleClick}></Button>
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   login: {
     flexDirection: 'row',
