@@ -27,7 +27,7 @@
     "mocha": "^10.3.0"
   },
   "scripts": {
-    "test": "mocha utils/hello.craigen.mjs",
+    "test": "mocha",
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
@@ -38,5 +38,6 @@
     "build-android-apk": "rm ./package-lock.son; npx eas-cli build -p android --profile android-apk",
     "run-preview": "npx expo start --no-dev --minify"
   },
+  "type": "module",
   "private": true
 }
